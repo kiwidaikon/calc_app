@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,3 +30,12 @@ Route::get('/view/word/{name}/{msg}', function ($name, $msg) {
         'msg' => $msg
     ]);
 });
+
+// Route::<HTTPメソッド>('<アドレス>', [<コントローラーのクラス, 'アクション名>']);
+Route::get('/controller/hello', [MessageController::class, 'hello']);
+
+Route::get('/controller/var', [MessageController::class, 'var']);
+
+Route::get('/controller/word/{msg}', [MessageController::class, 'word']);
+
+Route::get('/controller/word/{name}/{msg}', [MessageController::class, 'word2']);
