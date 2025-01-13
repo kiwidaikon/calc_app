@@ -5,16 +5,31 @@
      <meta charset="UTF-8">
      <title>計算アプリ</title>
  </head>
- //<? php
- //if ({$score}= "addition") {$keisan={ $number_1 }-{ $number_2 }
- //<p><?php echo '$keisan'; ?></P>
- //}
- //elseif ({$score}= "subtraction") {$keisan={ $number_1 }-{ $number_2 }
- //<p><?php echo '$keisan'; ?></p>
- //}
- elseif ({$score}= "multiplication") {$keisan={ $number_1 }*{ $number_2 }
- //<?php echo '$keisan'; ?></p>
- //}
- //else { $keisan={ $number_1 }/{ $number_2 }
- //<p><?php echo '$keisan'; ?></p>
- //}
+
+ <body>
+     <h2>計算アプリ</h2>
+
+     <?php
+     
+     $A = $number_1;
+     $B = $number_2;
+     
+     if ($score == 'addition') {
+         $ans = $A + $B;
+         echo $ans;
+     } elseif ($score == 'subtraction') {
+         $ans2 = $A - $B;
+         echo $ans2;
+     } elseif ($score == 'multiplication') {
+         $ans3 = $A * $B;
+         echo $ans3;
+     } elseif ($score == 'division') {
+         $ans4 = $A / $B;
+         echo $ans4;
+     }
+     
+     ?>
+
+
+
+ </body>
