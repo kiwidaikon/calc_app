@@ -5,18 +5,26 @@
      <meta charset="UTF-8">
      <title>計算アプリ</title>
  </head>
- 
-<?php
-if (条件式1) {
-    // 処理1
-} elseif (条件式2) {
-    // 処理2
-} elseif (条件式3) {
-    // 処理3
-} else {
-    // 処理4
-}
+
+ //<?php
+ //echo '$number_1, $score, $number_2';
+ //if ({$score}= "addition") {$keisan={ $number_1 }+{ $number_2 }}
+ //<p><?php echo $kasan;
+ //
+ ?></p>
+
+ // } elseif ({$score}= "subtraction") {$keisan={ $number_1 }-{ $number_2 }}
+ // <p><?php echo $kasan; ?></p>
+ //
+ //} elseif ({$score}= "multiplication") {$keisan={ $number_1 }*{ $number_2 }}
+ // 処理3
+ //<p><?php echo $kasan; ?></p>
+ //} else {
+ //$keisan={ $number_1 }/{ $number_2
+ //}
+ //<p><?php echo $kasan; ?></p>
 
  <body>
-     <h1>{{ $name }}さん、{{ $msg }}</h1>
+     <h1>{{ $number_1 }}、{{ $score }}、{{ $number_2 }}入力</h1>
+ </body>
  </body>

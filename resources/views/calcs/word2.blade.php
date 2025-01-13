@@ -5,11 +5,11 @@
      <meta charset="UTF-8">
      <title>計算アプリ</title>
  </head>
-$data = ($data['exchange'] * 110);
+
  <body>
-    
-     
-      <h1>{{ $name }}さん、{{ $msg }}</h1>
+
+
+     <h1>{{ $number_1 }}さん、{{ $score }}、{{ $number_2 }}</h1>
  </body>
 
  </html>

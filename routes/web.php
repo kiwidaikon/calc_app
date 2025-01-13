@@ -20,7 +20,7 @@ Route::get('/view/var', function () {
 // });
 
 
-Route::get('/view/word/{number1}/{number2}', function ($name, $msg) {
+Route::get('/view/word/{number_1}/{score}/{number_2}', function ($number_1, $score, $number_2) {
     return view('calcs.word2', [
         'number1' => $number_1,
         'number2' => $score,
@@ -29,8 +29,12 @@ Route::get('/view/word/{number1}/{number2}', function ($name, $msg) {
 });
 
 // Route::<HTTPメソッド>('<アドレス>', [<コントローラーのクラス, 'アクション名>']);
-Route::get('/calcs/word2/{name}/{msg}', [CalcController::class, 'hallo']);
+Route::get('/calcs/word2/{number_1}/{score}/{number_2}', [CalcController::class, 'calcs']);
 
 Route::get('/calcs/result', [CalcController::class, 'result']);
 
-Route::get('/controller/hello', [CalcController::class, 'hello']);
+Route::get('/hello', [CalcController::class, 'hello']);
+
+Route::get('/word/{number_1}/{score}/{number_2}', [CalcController::class, 'word2']);
+
+Route::get('/calcs/{number_1}/{score}/{number_2}', [CalcController::class, 'result']);

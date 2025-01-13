@@ -13,7 +13,7 @@ class MessageController extends Controller
 
     public function var()
     {
-        return view('message.var', ['variable' => 'Hello from MessageController']);
+        return view('calcs.var', ['variable' => 'Hello from CalcController']);
     }
 
     public function word($msg)
