@@ -9,5 +9,4 @@
  <body>
      <h2>計算アプリ</h2>
 
-<?php
-echo "$ans" ;
+     <?php echo "$ans";
