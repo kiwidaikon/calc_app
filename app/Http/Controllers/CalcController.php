@@ -8,6 +8,21 @@ class CalcController extends Controller
 {
     public function result($number_1, $score, $number_2)
     {
-        return view('calcs.result', ['number_1' => $number_1, 'score' => $score, 'number_2' => $number_2]);
+        
+    
+         if ($score == 'addition') {
+         $ans = $number_1 + $number_2 ;
+     } elseif ($score == 'subtraction') {
+         $ans = $number_1 - $number_2 ;
+     } elseif ($score == 'multiplication') {
+         $ans = $number_1 * $number_2 ;
+     } elseif ($score = 'division') {
+         $ans = $number_1 / $number_2 ;
+} 
+return view('calcs.result', ['number_1' => $number_1, 'score' => $score, 'number_2' => $number_2,'ans' => $ans]);
     }
 }
+
+
+
+
