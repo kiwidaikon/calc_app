@@ -8,5 +8,8 @@
 
  <body>
      <h2>計算アプリ</h2>
+     <p>
+     <h3>{{ $ans }}</h3>
+ </body>
 
-     <?php echo "$ans";
+ </html>

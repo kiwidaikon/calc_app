@@ -8,8 +8,6 @@ class CalcController extends Controller
 {
     public function result($number_1, $operator, $number_2)
     {
-
-
         if ($operator == 'addition') {
             $ans = $number_1 + $number_2;
         } elseif ($operator == 'subtraction') {
